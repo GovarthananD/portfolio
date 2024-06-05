@@ -1,0 +1,326 @@
+body{
+  background-color: #cfcfdc;
+  animation: backgroundChange 10s infinite;
+}
+
+.appbar{
+  background-color: #fff;
+  color: black;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hello{
+  font-weight: bold;
+  position: relative;
+  top: 100px;
+}
+.blue{
+  color: #6E06F2;
+}
+.name{
+  font-size: 3rem;
+  color: #24262F;
+  font-weight: bolder;
+  font-family: "Oswald", sans-serif;
+  position: relative;
+  top: 80px;
+}
+.role{
+  color: #24262F;
+  font-size: 3rem;
+  font-weight: bolder;
+  position: relative;
+  top: 30px;
+}
+.para{
+  font-size: large;
+  width: 50%;
+  color: #24262F;
+}
+.button-link{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.link{
+  height: 40px;
+  width: 120px;
+  border-radius: 5px;
+  border-color: #cfcfdc;
+  cursor: pointer;
+  background-color: #6E06F2;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+}
+
+.link2{
+  height: 40px;
+  width: 120px;
+  border-radius: 5px;
+  border-color: #cfcfdc;
+  cursor: pointer;
+  background-color: #fff;
+  color: black;
+  font-weight: bold;
+  border: 0.5px solid;
+}
+.link2:hover{
+  background-color: black;
+  color: #fff;
+  border: none;
+}
+
+.images{
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.skill-session{
+  font-size: 80px;
+  color: #24262F;
+  margin-top: 150px;
+}
+
+.skills{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.skill-box{
+  box-shadow: 10px 10px 30px #6E06F2,
+  -10px -10px 30px #24262F;
+  height: 200px;
+  width: 350px;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  
+  h3{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #24262F;
+  }
+  
+
+  .list{
+    list-style: none;
+    text-align: center;   
+    align-items: center; 
+}
+
+  .tick{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: #24262F;
+    gap: 10px;
+  }
+}
+.padippu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.education{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #24262F;
+  box-shadow: 10px 10px 30px #6E06F2,
+  -10px -10px 30px #24262F;
+  border-radius: 10px;
+  width: 50%;
+}
+/* .edu{
+  position: relative;
+  bottom: 40px;
+}
+.edu1{
+  position: relative;
+  bottom: 80px;
+} */
+.end{
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h3{
+    font-weight: bold;
+    color: #24262F;
+  }
+}
+.ending{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; 
+}
+
+
+.resume{
+  height: 50px;
+  width: 150px;
+  border-radius: 5px;
+  border: none;
+  background-color: #6E06F2;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.best{
+  font-size: 5rem;
+  color: #24262F;
+}
+.projects{
+ display: grid;
+ grid-template-columns: repeat(auto-fill, 400px);
+ gap: 20px;
+ align-items: center;
+ text-align: center;
+ justify-content: space-evenly;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: auto;
+  text-align: center;
+  cursor: pointer;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 #6E06F2;
+}
+.card-container {
+  
+  width: 100%;
+  gap: 30px;
+}
+.card-pic{
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+.card-title{
+  width: 100%;
+}
+.service{
+  font-weight: bold;
+  color:#24262F;
+}
+.contact-container{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+
+  p{
+    position: relative;
+    bottom: 50px;
+    width: auto;
+    color: #24262F;
+    font-weight: bold;
+  }
+}
+.cont-image{
+  height: 20px;
+  width: 20px;
+  align-items: center;
+}
+.contact{
+  align-items: center;
+}
+.contact-list{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  p{
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  a{
+    text-decoration: none;
+  }
+}
+.robust{
+  font-weight: bold;
+  color: #7e8293;
+  position: relative;
+  bottom: 50px;
+}
+.navItems{
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 10px;
+  }
+
+  .name{
+    font-size: 2rem;
+    position: relative;
+    top: 65px;
+  }
+  .role{
+    font-size: 2rem;
+    margin-top: 10px;
+  }
+  .para{
+    display: flex;
+    width: 100%;
+    text-align: center;
+  }
+  .button-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .skills{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contact-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .contact-list{
+    display: flex;
+    flex-direction: column;
+  }
+}
