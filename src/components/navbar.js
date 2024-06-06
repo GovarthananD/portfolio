@@ -12,9 +12,9 @@ import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
+// import Button from "@mui/material/Button";
 import Home from "./home";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 interface Props {
   /**
@@ -28,6 +28,8 @@ const drawerWidth = 240;
 const navItems = ["Home", "Project", "Contact"];
 
 export default function Navbar(props: Props) {
+  const navigate = useNavigate();
+
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -47,7 +49,7 @@ export default function Navbar(props: Props) {
             <ListItemButton
               component={Link}
               to={`/${item}`}
-              sx={{ textDecoration: "none", textAlign: "center"}}
+              sx={{ textDecoration: "none", textAlign: "center" }}
             >
               <ListItemText primary={`${item}`} />
             </ListItemButton>
@@ -86,12 +88,21 @@ export default function Navbar(props: Props) {
             >
               Govarthanan D
             </Typography>
-            <Box sx={{ display: { xs: "none", sm: "block" } }}>
-              {navItems.map((item) => (
-                <Button key={item} sx={{ color: "black" }}>
-                  <Link sx={{textDecoration: "none"}} to={`/${item}`}>{item}</Link>
-                </Button>
-              ))}
+            <Box sx={{ display: { xs: "none", sm: "block"} }}  >
+              {/* {navItems.map((item) => (
+                // <Button key={item} sx={{ color: "black" }}>
+                <div className="button-link">
+                <a href={`/${item}`} style={{ textDecoration: "none", color: "black"}}>
+                  {item}
+                </a>
+                </div>
+                // </Button>
+              ))} */}
+              <div className="button-link"> 
+               <button className="button-link2"  onClick={()=>navigate("/")}>Home</button>
+               <button className="button-link2" onClick={()=>navigate("/Project")}>Project</button>
+               <button className="button-link2" onClick={()=>navigate("/Contact")}>Contact</button>
+               </div>
             </Box>
           </Toolbar>
         </AppBar>

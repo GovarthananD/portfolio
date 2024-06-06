@@ -30,6 +30,8 @@ const drawerWidth = 240;
 const navItems = ["Home", "Project", "Contact"];
 
 export default function Navbar(props: Props) {
+
+
   const navigation = useNavigate();
 
   const { window } = props;
@@ -92,11 +94,18 @@ export default function Navbar(props: Props) {
               Govarthanan D
             </Typography>
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
-              {navItems.map((item) => (
-                <Button key={item} sx={{ color: "black" }}>
-                  <Link to={`/${item}`}>{item}</Link>
-                </Button>
-              ))}
+              {/* {navItems.map((item) => (
+                // <Button key={item} sx={{ color: "black" }}>
+                <div className="button-link">
+                  <a href={`/${item}`} style={{ textDecoration: "none", color: "black"}}>{item}</a>
+                  </div>
+                // </Button>
+              ))} */}
+              <div className="button-link"> 
+               <button className="button-link2"  onClick={()=>navigation("/")}>Home</button>
+               <button className="button-link2" onClick={()=>navigation("/Project")}>Project</button>
+               <button className="button-link2" onClick={()=>navigation("/Contact")}>Contact</button>
+               </div>
             </Box>
           </Toolbar>
         </AppBar>
@@ -154,7 +163,7 @@ export function Project() {
               </h1>
               <div className="projects">
                 <div className="card">
-                  <a
+                  <a 
                     href="https://glistening-mandazi-63a7dd.netlify.app/"
                     target="_blank"
                   >
@@ -166,6 +175,7 @@ export function Project() {
                   </a>
                   <div className="card-container">
                     <a
+                     className="anker"
                       href="https://glistening-mandazi-63a7dd.netlify.app/"
                       target="_blank"
                     >
@@ -187,6 +197,7 @@ export function Project() {
                   </a>
                   <div className="card-container">
                     <a
+                    className="anker"
                       href="https://dreamy-llama-96ce38.netlify.app/"
                       target="_blank"
                     >
@@ -210,6 +221,7 @@ export function Project() {
                   </a>
                   <div className="card-container">
                     <a
+                    className="anker"
                       href="https://neon-swan-1beb3a.netlify.app/"
                       target="_blank"
                     >
@@ -232,6 +244,7 @@ export function Project() {
                   </a>
                   <div className="card-container">
                     <a
+                    className="anker"
                       href="https://extraordinary-snickerdoodle-18f4b7.netlify.app/"
                       target="_blank"
                     >
@@ -253,6 +266,7 @@ export function Project() {
                   </a>
                   <div className="card-container">
                     <a
+                    className="anker"
                       href="https://splendorous-figolla-858949.netlify.app/"
                       target="_blank"
                     >
@@ -274,6 +288,7 @@ export function Project() {
                   </a>
                   <div className="card-container">
                     <a
+                    className="anker"
                       href="https://govarthanand.github.io/Makeup-Api/"
                       target="_blank"
                     >

@@ -138,6 +138,12 @@ export default function Home() {
                   >
                     <button className="resume">View Resume</button>
                   </a>
+                  <a
+                    href="https://drive.google.com/file/d/16gVxWLRaH-SdqXOHQUyy3duRYKM5PlFP/view?usp=sharing"
+                    target="_blank"
+                  >
+                    <button className="resume">Certificate</button>
+                  </a>
                 </div>
               </div>
             </Item>
